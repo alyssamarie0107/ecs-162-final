@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100vh; /* want container to fill up the viewport screen*/
+  width: 100vw;
+  flex-direction: row;
+}
+
+#left-side{
+  flex:1;
+  width: 45vw;
+  height: 100%;
+}
+
+#shields {
+  height:100%;
+  width: 110%;
+}
+
+#right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 55vw;
+  position: relative;
+  background-color: #365c85;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  vertical-align:center;
+  justify-content:center;
+}
+
+#davis-logo {
+  width: 350px;
+}
+
+#hyper {
+  text-decoration:none; /* */
+}
+
+#login-btn {
+  display: flex;
+  width: 180px;
+  font-size: 13px;
+  align-items: center;
+  color: #142a50;
+  border: none;
+  cursor: pointer;
+  margin-top: 35px;
+  padding: 5px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: #FFFFFF;
+}
+
+#login-btn:focus {
+  outline: 0;
+}
+
+#google-logo {
+  width: 45px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #left-side {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  #shields {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #right-side {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #davis-logo {
+    width: 280px;
+  }
+}
