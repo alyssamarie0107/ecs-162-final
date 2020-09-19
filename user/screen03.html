@@ -1,0 +1,89 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!--Show display screen03 if user is a FINDER-->
+<!--screen02 > finder > screen03 > next > screen04-->
+<!-- User has 3 options: -->
+<!-- 1. user can enter data and press next, which directs to screen04, after submiting the data to the server, direct to screen09-->
+<!-- 2. user can type directly on search for existing items bar -->
+<!-- 3. user can press the magnifer to be lead to screen05-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCD Lost&Found</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/user/reset.css" />
+    <link rel="stylesheet" href="/user/screen03.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 200,300,400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="addBarListener()">
+    <header>
+      <a href="./screen02.html">
+        <img
+          id="davis-logo"
+          src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2FLogo.png?v=1590203121634"
+        />
+      </a>
+    </header>
+    <main>
+      <div id="body-div">
+        <h1 id="input-found">Input the found item</h1>
+        <div id="Input-Form">
+          <form>
+            <h2>Title</h2>
+            <input type="text" id="title" />
+            <h2>Category</h2>
+          <input type = "text" list="category-options" id="category">
+          <datalist id="category-options">
+            <option value="Electronics"></option>
+              <option value="Textbooks/Notebooks"></option>
+            <option value="ID/Student ID"></option>
+            <option value="Bikes/Scooters"></option>
+            <option value="Wallet/Glasses/Keys"></option>
+            <option value="Clothes/Backpacks/Jewlery"></option>
+            <option value="Other"></option>
+          </datalist>
+            <h2>Description</h2>
+            <div id="description" contenteditable="true"></div>
+            <h2>Attach a photo (optional)</h2>
+            <label for="file-upload" class="custom-file-upload">
+              <h2 id="chooseFile">
+                Choose File
+              </h2>
+            </label>
+            <input id="file-upload" type="file" />
+
+            <img id="serverImage" style="display:none" />
+          </form>
+          <div id="next-btn">
+            <button class="btn" id="next" onclick="nextScreen('screen04')">Next</button>
+          </div>
+        </div>
+        <h1 id="or-search">Or search for existing requests</h1>
+        <div id="or-search-container">
+          <div
+            id="searchBarInput"
+            contenteditable="true"
+            placeholder="Enter exisiting request"
+            class="looking"
+          ></div>
+          <img
+               id="littleMagnifier"
+            class="magnifier"
+            src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2Fsearch-solid.svg?v=1590205931096"
+            onclick="finderSearch()"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script src="./script.js"></script>
+    </footer>
+  </body>
+</html>

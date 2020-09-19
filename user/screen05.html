@@ -1,0 +1,97 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!--screen02 > finder > screen03 > magnifier > screen05-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCD Lost&Found</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/user/reset.css" />
+    <link rel="stylesheet" href="/user/screen03.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 200,300,400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loadPreviousBarInput()">
+    <header>
+      <a href="./screen02.html">
+        <img
+          id="davis-logo"
+          src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2FLogo.png?v=1590203121634"
+        />
+      </a>
+    </header>
+    <main>
+      <div id="body-div">
+        <h1 id="search-existing">Search for exitsting requests</h1>
+        <div id="or-search-container-2">
+          <div id="title"
+            contenteditable="true"
+            placeholder="Enter exisiting request"
+            class="looking"
+          ></div>
+          <img
+            class="magnifier"
+            src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2Fsearch-solid.svg?v=1590205931096"
+            onclick="finderSearch()"
+          />
+        </div>
+
+        <div id="Input-Form-2">
+          <form>
+            <h2>Date & Time</h2>
+            <div id="date-row">
+              <div id="date-timef">
+                <input type="date" id="datef" />
+                <input type="time" id="timef" />
+              </div>
+              <p id="date-time-to">
+                to
+              </p>
+              <div id="date-timet">
+                <input type="date" id="datet" />
+                <input type="time" id="timet" />
+              </div>
+            </div>
+            <h2>Category</h2>
+            <input type="text" list="category-options" id="category" />
+            <datalist id="category-options">
+              <option value="Electronics"></option>
+              <option value="Textbooks/Notebooks"></option>
+              <option value="ID/Student ID"></option>
+              <option value="Bikes/Scooters"></option>
+              <option value="Wallet/Glasses/Keys"></option>
+              <option value="Clothes/Backpacks/Jewlery"></option>
+              <option value="Other"></option>
+            </datalist>
+
+            <h2>Location</h2>
+            <input
+              id="location-input"
+              class="controls"
+              type="text"
+              placeholder="Enter Location or Click on Map"
+            />
+          </form>
+          <div id="center">
+            <div id="google-map"></div>
+          </div>
+          <div id="next-btn">
+            <button class="btn" id="search" onclick="search('screen09')" value="lost">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script src="./map.js"></script>
+      <script src="./script.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+html {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#davis-logo {
+  display: flex;
+  width: 250px;
+  margin-left: auto;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 90%;             
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#body-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  max-width: 550px;       /* from 500px to 550px, just same as our screen03,04 box width*/
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 0;
+  padding-bottom: 10px;
+  color: #142a50;
+}
+
+#headar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  justify-content:space-between;
+}
+
+#datef,
+#datet {
+  width: 130px;
+  color: #365c85;
+}
+
+#next-btn {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: flex-end;
+}
+
+#edit-search {
+  display: flex;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #142a50;
+  border: none;
+  width: 8em;
+  height: 25px;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  font-size: 10px;
+  padding-top: 6px;
+  font-family: Montserrat, sans-serif;
+}
+
+#edit-search:focus {
+  outline: none;
+}
+
+.Input-Form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  position: relative;
+  height: 100%;
+}
+
+.boxes{
+  margin-bottom:2px;
+}
+
+.accordion{
+  background-color: #b3c1d1;
+}
+
+.accordion2{
+  background-color: #feebb1;
+}
+.accordion,
+.accordion2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Montserrat, sans-serif;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.accordion:after,
+.accordion2:after {
+  content: "More";
+  color: #142a50;
+  font-weight: bold;
+}
+
+.active:after {
+  color: #142a50;
+  content: "Less";
+  position: absolute;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+#title0,
+#title1,
+#title2,
+#title3,
+#title4 {
+  font-size: 20px;
+  color: #365c85;
+  font-family: Montserrat, sans-serif
+}
+
+.panel{
+  background-color: #b3c1d1;
+}
+
+.panel2{
+  background-color: #feebb1;
+}
+
+.panel,
+.panel2{
+  display: flex;
+  /* added*/
+  flex-direction: row;
+  /* added */
+  padding: 0 10px;
+  /* top-0, right-10, bottom-*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.picture {
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.data-container {
+  display: flex;
+  padding-left: 10px;
+  flex-direction:column;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.dbdata-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dbdata {
+  padding-left: 10px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  word-break:break-word;  /* added */
+}
+
+.category-container,
+.location-container,
+.date-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.location-header{
+  padding-right: 4px;
+}
+
+.date-header{
+  padding-right: 37px;
+}
+
+.description-container{
+  display:flex;
+  flex-wrap: wrap;
+  word-break:break-word;   /* added */
+  white-space:pre-wrap;   /* added */
+}
+
+#description0,
+#description1,
+#description2,
+#description3,
+#description4 {
+  color: #365c85;
+  font-size: 15px;
+  margin-bottom:40px;   /*for "less" not overlap when very long description*/
+}
+
+#edit {
+  background-color: #142a50;
+}
+
+.buttonPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.PrevNextButton {
+  margin: 10px;
+  background-color: #142a50;
+  cursor: pointer;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: 5px 10px;
+  /*padding-bottom:5px;
+  padding-left:10px;
+  padding-right:10px;*/
+  border-radius: 10px;
+}
+
+.PrevNextButton:focus {
+  outline: none;
+}
+
+.pages{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+
+}
+
+p {
+  font-family: 'Montserrat';
+  color: #142a50;
+  /*font-weight:bold;
+  font-size:large;
+  margin-bottom:3vh;*/
+}
+
+.finderColor {
+  background-color: #feebb1;
+}
+
+.infoSpace {
+  margin-left: 10px;
+}
+
+.keyword{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+.right-margin{
+  margin-right:10px;
+}
+
+@media (max-width: 480px) {
+
+  main {
+    width: 95%;
+  }
+
+  .dbdata,
+  h2{
+    font-size: 11px;
+  }
+
+  #davis-logo {
+    width: 40vw;
+    margin-top: 8%;
+  }
+
+  .picture {
+    width: 150px;
+    height: auto;
+  }
+
+  .location-header{
+    padding-right: 2.5px;
+  }
+
+  .date-header{
+    padding-right: 25px;
+  }
+
+  #description0,
+  #description1,
+  #description2,
+  #description3,
+  #description4 {
+    font-size: 11px;
+  }
+
+}
+.noResult{
+  text-align:center; 
+  display:none; 
+  margin-top:20px;
+}
+
+/* added this to cancel "padding-left:10px;" in .dbdata
+no need that much space between date and time */
+#time0,
+#time1,
+#time2,
+#time3,
+#time4{
+  padding-left:0;
+}

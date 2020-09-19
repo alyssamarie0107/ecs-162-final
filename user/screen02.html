@@ -1,0 +1,57 @@
+<!-- PROTECTED HOMEPAGE -->
+<!-- user can only see this page once they authenticate themselves through Google-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCD Lost&Found</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/user/reset.css" />
+    <link rel="stylesheet" href="/user/screen02.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 200,300,400,600,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="checkDB()">
+    <header>
+      <a href="./screen02.html">
+        <img
+          id="davis-logo"
+          src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2FLogo.png?v=1590203121634"
+        />
+      </a>
+    </header>
+
+    <div class="finder_seeker">
+      <div class="find_part">
+        <p>
+          Did you find something?
+        </p>
+        <a href="./screen03.html">
+          <button class="finder">
+            I'm a finder
+          </button>
+        </a>
+      </div>
+
+      <div class="seek_part">
+        <p>
+          Or are you looking for something?
+        </p>
+        <a href="./screen06.html">
+          <button class="seeker">
+            I'm a seeker
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <script src="./script.js"></script>
+    </footer>
+  </body>
+</html>

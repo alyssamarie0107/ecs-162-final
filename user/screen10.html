@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UCD Lost&Found</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/user/reset.css" />
+  <link rel="stylesheet" href="/user/screen09.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat: 200,300,400,600,700" rel="stylesheet" />
+</head>
+
+<body onload="DisplayResult()">
+  <header>
+    <a href="./screen02.html">
+      <img id="davis-logo" src="https://cdn.glitch.com/5774b107-1e09-4f3f-a5f1-23f70ad72b92%2FLogo.png?v=1590203121634" />
+    </a>
+  </header>
+  <main>
+    <div id="body-div">
+      <h1>Showing results for</h1>
+      <div id="headar">
+
+        <div class="keyword">
+          <div id="searchDate" class="right-margin">
+            No result
+          </div>
+          <div id="searchCategory" class="right-margin">
+            
+          </div>
+          <div id="searchLocation" class="right-margin">
+          </div>
+        </div>
+
+        <div>
+          <button class="btn" id="edit-search" onclick="backPage()">Edit Search</button>
+        </div>
+      </div>
+      <div id="noResult" class="noResult">
+        No Result Found
+      </div>
+      <!--------------------------------------------------- 0th item ------------------------------------------ !-->
+      <div class="Input-Form">
+        <div id="item0" class="boxes" style="display:none">
+          <button class="accordion2">
+            <div id="title0">Placeholder</div>
+          </button>
+          <div class="panel2">
+            <div>
+              <img id="photo0" class="picture" style="display:none" />
+            </div>
+            <!--container for data-->
+            <div class="data-container">
+
+              <div class="info-container">
+                <!--category-->
+                <div class="category-container">
+                  <h2>Category</h2>
+                  <div class="dbdata" id="category0"></div>
+                </div>
+                <!--location-->
+                <div class="location-container">
+                  <h2 class="location-header">Location</h2>
+                  <div class="dbdata" id="location0"></div>
+                </div>
+                <!--date-->
+                <div class="date-container">
+                  <h2 class="date-header">Date</h2>
+                  <div class="dbdata" id="date0"></div>
+                  <div class="dbdata" id="time0"></div>
+                </div>
+              </div>
+              <!--end of info-container-->
+              <!--description-->
+              <div class="description-container">
+                <div id="description0"></div>
+              </div>
+            </div>
+            <!--end of data-container-->
+          </div>
+          <!--end of panel-->
+        </div>
+        <!--end of boxes-->
+      </div>
+      <!--end of Input-Form-->
+      <!--------------------------------------------------- 1st item ------------------------------------------ !-->
+    <div class="Input-Form">
+      <div id="item1" class="boxes" style="display:none" >
+        <button class="accordion2">
+          <div id="title1">Placeholder</div>
+        </button>
+        <div class="panel2">
+          <div>
+            <img id="photo1" class="picture" style="display:none" />
+          </div>
+
+          <!--container for data-->
+          <div class="data-container">
+            <!--category-->
+            <div class="info-container">
+
+              <div class="category-container">
+                <h2>Category</h2>
+                <div class="dbdata" id="category1"></div>
+              </div>
+
+              <div class="location-container">
+                <h2 class= "location-header">Location</h2>
+                <div class="dbdata" id="location1"></div>
+              </div>
+
+              <div class="date-container">
+                <h2 class ="date-header">Date</h2>
+                <div class="dbdata" id="date1"></div>
+                <div class="dbdata" id="time1"></div>
+              </div>
+
+            </div>
+            <!--description-->
+            <div class="description-container">
+              <div id="description1">
+              </div>
+            </div>
+          </div><!--end of data-container-->
+        </div><!--end of panel-->
+      </div><!--end of boxes-->
+    </div><!--end of Input-Form-->
+      <!--------------------------------------------------- 2nd item ------------------------------------------ !-->
+    <div class="Input-Form">
+      <div id="item2" class="boxes" style="display:none" >
+
+        <button class="accordion2">
+          <div id="title2">Placeholder</div>
+        </button>
+        <div class="panel2">
+          <div>
+            <img id="photo2" class="picture" style="display:none" />
+          </div>
+
+          <!--container for data-->
+          <div class="data-container">
+            <!--category-->
+            <div class="info-container">
+
+              <div class="category-container">
+                <h2>Category</h2>
+                <div class="dbdata" id="category2"></div>
+              </div>
+
+              <div class="location-container">
+                <h2 class= "location-header">Location</h2>
+                <div class="dbdata" id="location2"></div>
+              </div>
+
+              <div class="date-container">
+                <h2 class="date-header">Date</h2>
+                <div class="dbdata" id="date2"></div>
+                <div class="dbdata" id="time2"></div>
+              </div>
+
+            </div>
+            <!--description-->
+            <div class="description-container">
+              <div id="description2">
+              </div>
+            </div>
+          </div><!--end of data-container-->
+        </div><!--end of panel-->
+      </div><!--end of boxes-->
+    </div><!--end of Input-Form-->
+      <!--------------------------------------------------- 3rd item ------------------------------------------ !-->
+    <div class="Input-Form">
+      <div id="item3" class="boxes" style="display:none" >
+        <button class="accordion2">
+          <div id="title3">Placeholder</div>
+        </button>
+        <div class="panel2">
+          <div>
+            <img id="photo3" class="picture" style="display:none" />
+          </div>
+          <!--container for data-->
+          <div class="data-container">
+            <!--category-->
+            <div class="info-container">
+              <div class="category-container">
+                <h2>Category</h2>
+                <div class="dbdata" id="category3"></div>
+              </div>
+              <div class="location-container">
+                <h2 class = "location-header">Location</h2>
+                <div class="dbdata" id="location3"></div>
+              </div>
+              <div class="date-container">
+                <h2 class="date-header">Date</h2>
+                <div class="dbdata" id="date3"></div>
+                <div class="dbdata" id="time3"></div>
+              </div>
+            </div>
+            <!--description-->
+            <div class="description-container">
+              <div id="description3">
+              </div>
+            </div>
+          </div><!--end of data-container-->
+        </div><!--end of panel-->
+      </div><!--end of boxes-->
+    </div><!--end of Input-Form-->
+      <!--------------------------------------------------- 4th item ------------------------------------------ !-->
+    <div class="Input-Form">
+      <div id="item4" class="boxes" style="display:none" >
+        <button class="accordion2">
+          <div id="title4">Placeholder</div>
+        </button>
+        <div class="panel2">
+          <div>
+            <img id="photo4" class="picture" style="display:none" />
+          </div>
+          <!--container for data-->
+          <div class="data-container">
+            <!--category-->
+            <div class="info-container">
+              <div class="category-container">
+                <h2>Category</h2>
+                <div class="dbdata" id="category4"></div>
+              </div>
+              <div class="location-container">
+                <h2 class = "location-header">Location</h2>
+                <div class="dbdata" id="location4"></div>
+              </div>
+              <div class="date-container">
+                <h2 class="date-header">Date</h2>
+                <div class="dbdata" id="date4"></div>
+                <div class="dbdata" id="time4"></div>
+              </div>
+            </div>
+            <!--description-->
+            <div class="description-container">
+              <div id="description4">
+              </div>
+            </div>
+          </div><!--end of data-container-->
+        </div><!--end of panel-->
+      </div><!--end of boxes-->
+    </div><!--end of Input-Form-->
+
+      <!--------------------------------------------- end of items -------------------------------!-->
+
+    <div class="buttonPart">
+      <button class="PrevNextButton" id="previous" onclick="previous('2')">
+        Prev
+      </button>
+      <button class="PrevNextButton" id="next" onclick="next('2')">
+        Next
+      </button>
+    </div>
+
+    <div class="pages">
+      <p id="currentPage"></p>
+      <p id="totalPages"></p>
+    </div>
+
+</div> <!-- end of body-div-->
+
+  </main>
+  <footer>
+    <script src="./accordion.js"></script>
+    <script src="./script.js"></script>
+  </footer>
+</body>
+
+</html>
